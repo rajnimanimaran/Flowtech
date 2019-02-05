@@ -1,0 +1,445 @@
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\BusinessServices.dll.config
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\BusinessServices.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\BusinessServices.pdb
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\AutoMapper.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\BusinessEntities.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\DataModel.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\MongoDB.Bson.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\MongoDB.Driver.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\Newtonsoft.Json.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\Resolver.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\EntityFramework.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\Unity.Mvc5.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\System.Web.Mvc.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\System.Web.Razor.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\System.Web.WebPages.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\BusinessEntities.pdb
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\DataModel.pdb
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\Resolver.pdb
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\AutoMapper.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\MongoDB.Bson.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\MongoDB.Driver.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\Newtonsoft.Json.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\EntityFramework.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\System.Web.Mvc.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\System.Web.Razor.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\System.Web.WebPages.xml
+E:\CMS_New\KPMES\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\CMS_New\KPMES\API\BusinessServices\obj\Debug\BusinessServices.csprojResolveAssemblyReference.cache
+E:\CMS_New\KPMES\API\BusinessServices\obj\Debug\BusinessServices.dll
+E:\CMS_New\KPMES\API\BusinessServices\obj\Debug\BusinessServices.pdb
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll.config
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.pdb
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\Unity.Mvc5.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Web.Infrastructure.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.pdb
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.pdb
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.pdb
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.xml
+F:\projects\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csprojResolveAssemblyReference.cache
+F:\projects\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.dll
+F:\projects\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.pdb
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll.config
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.pdb
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Unity.Mvc5.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.pdb
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.pdb
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.pdb
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.xml
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.dll
+E:\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll.config
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Unity.Mvc5.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.dll.config
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.dll.config
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.dll.config
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csprojAssemblyReference.cache
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csproj.CoreCompileInputs.cache
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csproj.CopyComplete
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.dll
+C:\Users\sony\Desktop\ERP Project\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.pdb
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll.config
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.pdb
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Unity.Mvc5.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.pdb
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.dll.config
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.pdb
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.dll.config
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.pdb
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.dll.config
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csprojAssemblyReference.cache
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csproj.CoreCompileInputs.cache
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csproj.CopyComplete
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.dll
+G:\ERP\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.pdb
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll.config
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.pdb
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Unity.Mvc5.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.pdb
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.dll.config
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.pdb
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.dll.config
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.pdb
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.dll.config
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csprojAssemblyReference.cache
+E:\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csproj.CoreCompileInputs.cache
+E:\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csproj.CopyComplete
+E:\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.dll
+E:\API\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.pdb
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.dll.config
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.dll.config
+E:\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.dll.config
+E:\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csprojAssemblyReference.cache
+E:\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csproj.CoreCompileInputs.cache
+E:\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csproj.CopyComplete
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.csprojResolveAssemblyReference.cache
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\obj\Debug\BusinessServices.pdb
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll.config
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessServices.pdb
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\Unity.Mvc5.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\BusinessEntities.pdb
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\DataModel.pdb
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\Resolver.pdb
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\AutoMapper.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Bson.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\Newtonsoft.Json.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\EntityFramework.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Mvc.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.Razor.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.xml
+E:\Flowtech\ERP(Bangalore)\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\BusinessServices.dll.config
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\BusinessServices.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\BusinessServices.pdb
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\AutoMapper.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\BusinessEntities.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\DataModel.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\MongoDB.Bson.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\MongoDB.Driver.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\Newtonsoft.Json.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\Resolver.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\EntityFramework.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\Unity.Mvc5.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\System.Web.Mvc.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\System.Web.Razor.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\System.Web.WebPages.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\BusinessEntities.pdb
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\DataModel.pdb
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\Resolver.pdb
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\AutoMapper.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\MongoDB.Bson.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\MongoDB.Driver.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\Newtonsoft.Json.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\EntityFramework.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\System.Web.Mvc.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\System.Web.Razor.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\System.Web.WebPages.xml
+E:\Karthika\Flowtech\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Karthika\Flowtech\API\BusinessServices\obj\Debug\BusinessServices.csprojResolveAssemblyReference.cache
+E:\Karthika\Flowtech\API\BusinessServices\obj\Debug\BusinessServices.dll
+E:\Karthika\Flowtech\API\BusinessServices\obj\Debug\BusinessServices.pdb
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\BusinessServices.dll.config
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\BusinessServices.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\BusinessServices.pdb
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\AutoMapper.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\BusinessEntities.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\DataModel.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\MongoDB.Bson.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\MongoDB.Driver.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\Newtonsoft.Json.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\Resolver.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\EntityFramework.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\Unity.Mvc5.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\System.Web.Mvc.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\System.Web.Razor.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\System.Web.WebPages.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\BusinessEntities.pdb
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\DataModel.pdb
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\Resolver.pdb
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\AutoMapper.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\MongoDB.Bson.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\MongoDB.Driver.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\Newtonsoft.Json.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\EntityFramework.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\System.Web.Mvc.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\System.Web.Razor.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\System.Web.WebPages.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Karthika\FlowtechNew\API\BusinessServices\obj\Debug\BusinessServices.csprojResolveAssemblyReference.cache
+E:\Karthika\FlowtechNew\API\BusinessServices\obj\Debug\BusinessServices.dll
+E:\Karthika\FlowtechNew\API\BusinessServices\obj\Debug\BusinessServices.pdb
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\BusinessServices.dll.config
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\BusinessServices.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\BusinessServices.pdb
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\AutoMapper.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\BusinessEntities.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\DataModel.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\MongoDB.Bson.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\MongoDB.Driver.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Resolver.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Unity.Mvc5.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\System.Web.Mvc.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\System.Web.Razor.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\System.Web.WebPages.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\BusinessEntities.pdb
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\BusinessEntities.dll.config
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\DataModel.pdb
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\DataModel.dll.config
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Resolver.pdb
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Resolver.dll.config
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\AutoMapper.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\MongoDB.Bson.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\MongoDB.Driver.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\System.Web.Mvc.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\System.Web.Razor.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\System.Web.WebPages.xml
+C:\Users\admin\Desktop\API\BusinessServices\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\admin\Desktop\API\BusinessServices\obj\Debug\BusinessServices.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\API\BusinessServices\obj\Debug\BusinessServices.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\API\BusinessServices\obj\Debug\BusinessServices.csproj.CopyComplete
+C:\Users\admin\Desktop\API\BusinessServices\obj\Debug\BusinessServices.dll
+C:\Users\admin\Desktop\API\BusinessServices\obj\Debug\BusinessServices.pdb

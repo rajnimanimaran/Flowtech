@@ -1,0 +1,99 @@
+<div class="docs-primary-header component-page-header">
+  <div class="container">
+    <h1 *ngIf="!isEditing">Administrator > Location > Add New Area </h1>
+    <h1 *ngIf="isEditing">Administrator > Location > Update Existing Area </h1>
+  </div>
+</div>
+<div class="container-fluid" id="fixedpage" style="padding-left:15%;padding-right:15%">
+
+  <div class="row"  style="margin-top:3%">
+    <div class="col-sm-10">
+      Create Area
+    </div>
+    <div class="col-sm-2" style="text-align: right">
+      <div>
+        <button mat-raised-button (click)="backAreaListForm()" color="warn">
+          <mat-icon>list</mat-icon>View
+        </button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="card">
+    <div class="card-header docs-primary-header" style="padding:4px;padding-left:5px;color:white">
+      <div class="row">
+        <div class="col-sm-10">
+          <h1 *ngIf="!isEditing">Add New Area </h1>
+          <h1 *ngIf="isEditing"> Update Existing Area </h1>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="card-body">
+      <div class="card" style="border-radius:0px">
+        <div class="card-body" style="padding:4px">
+          <form [formGroup]="signUpForm" class="form">
+            <div class="row">
+              <div class="col-sm-4">
+                <mat-form-field class="example-full-width">
+                  <mat-select formControlName="CountryName" [(ngModel)]="AreaModel.CountryId" (change)="GetStateName(AreaModel.CountryId)" required placeholder="Country Name">
+                    <mat-option *ngFor="let i of CountryIdName" [value]="i.CountryId">{{i.CountryName}}</mat-option>
+                 
+                  </mat-select>
+                  <mat-error> CountryName required</mat-error>
+                </mat-form-field>
+              </div>
+              <div class="col-sm-4">
+                <mat-form-field class="example-full-width">
+                  <mat-select formControlName="StateName" [(ngModel)]="AreaModel.StateId"  (change)="GetCityName(AreaModel.StateId)" required placeholder="State Name">
+                    <mat-option *ngFor="let i of StateIdName" [value]="i.StateId">{{i.StateName}}</mat-option>
+                   
+                  </mat-select> <mat-error> StateName required</mat-error>
+                </mat-form-field>
+              </div>
+              <div class="col-sm-4">
+                <mat-form-field class="example-full-width">
+                  <mat-select formControlName="CityName" [(ngModel)]="AreaModel.CityId" required placeholder="City Name">
+                    <mat-option *ngFor="let i of CityIdName" [value]="i.CityId">{{i.CityName}}</mat-option>
+                  
+                  </mat-select> <mat-error> CityName required</mat-error>
+                </mat-form-field>
+              </div>
+              <div class="col-sm-4">
+                <mat-form-field class="example-full-width">
+                  <input matInput formControlName="AreaName" [(ngModel)]="AreaModel.AreaName" 
+                  required placeholder="Area Name" >
+                  <mat-error> AreaName required</mat-error>  </mat-form-field>
+              </div>
+              <!-- <div class="col-sm-4">
+              <mat-form-field class="example-full-width">
+                <input matInput formControlName="AreaCode" required placeholder="Area Code" type="number" value="">
+                <mat-error> AreaCode required</mat-error>  </mat-form-field>
+            </div> -->
+              <div class="col-sm-4">
+                <mat-form-field class="example-full-width">
+                  <input matInput formControlName="Pincode" [(ngModel)]="AreaModel.Pincode" required
+                   placeholder="Pincode" type="number">
+                  <mat-error> Pincode required</mat-error> </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12" style="text-align: right">
+                <div class="btn">
+                  <button *ngIf="!isEditing" mat-raised-button color="primary" (click)="saveAreaDetails()">Save</button>&nbsp;
+      <button *ngIf="isEditing" mat-raised-button color="primary" (click)="saveAreaDetails()">Update</button>&nbsp;
+      <button (click)="backAreaListForm()" mat-raised-button color="warn">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

@@ -1,0 +1,102 @@
+<div class="docs-primary-header component-page-header">
+  <div class="container">
+    <h1 *ngIf="!isEditing">Human Resource > Designation > Add New Designation </h1>
+    <h1 *ngIf="isEditing">Human Resource > Designation > Update Existing Designation </h1>
+  </div>
+</div>
+<div class="container-fluid" id="fixedpage" style="padding-left:20%;padding-right:20%">
+    <div class="row"  style="margin-top:3%">
+        <div class="col-sm-10"> </div>
+        <div class="col-sm-2">
+          <div style="text-align: right">
+            <button mat-raised-button (click)="backDesignationListForm()"  color="warn">
+              <mat-icon aria-label="add">list</mat-icon>View
+            </button>
+          </div>
+        </div>
+      </div><br>
+  <div class="card">
+    <div class="card-header docs-primary-header" style="padding:4px;padding-left:5px;color:white">
+      <div class="row">
+        <div class="col-sm-10">
+          <h1 *ngIf="!isEditing"> Add New Designation </h1>
+          <h1 *ngIf="isEditing"> Update Existing Designation </h1>
+        </div>
+        <div class="col-sm-2">
+       
+        </div>
+      </div>
+
+    </div>
+    <div class="card-body">
+      <div class="card" style="border-radius:0px">
+        <div class="card-body" style="padding:4px">
+          <form [formGroup]="signUpForm" class="form">
+            <div class="row">
+              <div class="col-sm-6">
+                <mat-form-field class="example-full-width">
+                  <mat-select [(ngModel)]="designationtModel.CompanyId" formControlName="NameoftheCompany" required placeholder="Name of the Company">
+                    <mat-option   *ngFor="let i of ListCompanyIntiation" [value]="i.CompanyId" >{{i.CompanyName}}   
+                           </mat-option>                 
+                  </mat-select>
+                  <mat-error> NameoftheCompany required</mat-error>
+                </mat-form-field>
+
+              </div>
+              <div class="col-sm-6">
+                <mat-form-field class="example-full-width">
+                  <mat-select [(ngModel)]="designationtModel.DepartmentId" formControlName="NameoftheDepartment" required placeholder="Name of the Department">
+                    <mat-option  *ngFor="let i of ListdepartmentDetails" [value]="i.DepartmentId" >{{i.DepartmentName}}   </mat-option>
+  
+                  </mat-select>
+                  <mat-error> Name of the Department required</mat-error>
+                </mat-form-field>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <mat-form-field class="example-full-width">
+                  <input [(ngModel)]="designationtModel.DesignationName" formControlName="DesignationName" required matInput placeholder="Designation Name">
+                  <mat-error> Designation Name required</mat-error>
+                </mat-form-field>
+
+              </div>
+
+              <div class="col-sm-6">
+                <mat-form-field class="example-full-width">
+                  <input [(ngModel)]="designationtModel.DesignationCode" formControlName="DesignationCode" required matInput placeholder="Designation Code">
+                  <mat-error> Code required</mat-error>
+                </mat-form-field>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <mat-form-field class="example-full-width">
+                  <mat-select [(ngModel)]="designationtModel.Superior" formControlName="Superior" required placeholder="Reporting To">
+                    <mat-option *ngFor="let i of ListDesignation" [value]="i.DesignationId">{{i.DesignationName}}</mat-option>
+                  </mat-select>
+                  <mat-error> Reporting To required</mat-error>
+                </mat-form-field>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div style="text-align:right">
+                  <button *ngIf="!isEditing" mat-raised-button color="primary" (click)="SaveDesignationDetails()">Save</button>&nbsp;
+                  <button *ngIf="isEditing" mat-raised-button color="primary" (click)="SaveDesignationDetails()">Update</button>&nbsp;
+                  <button (click)="backDesignationListForm()" mat-raised-button color="warn">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>

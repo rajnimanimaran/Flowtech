@@ -1,0 +1,83 @@
+<div class="docs-primary-header component-page-header">
+  <div class="container">
+    <h1 *ngIf="!isEditing">Human Resource >  Department > Add New Department</h1>
+    <h1 *ngIf="isEditing">Human Resource > Department > Update Existing Department</h1>
+  </div>
+</div>
+<div class="container-fluid" id="fixedpage" style="padding-left:20%;padding-right:20%">
+  <div class="row"  style="margin-top:3%">
+    <div class="col-sm-10"> </div>
+    <div class="col-sm-2">
+      <div style="text-align: right">
+        <button mat-raised-button (click)="backDepartmentListForm()"  color="warn">
+          <mat-icon aria-label="add">list</mat-icon>View
+        </button>
+      </div>
+    </div>
+  </div><br>
+  <br>
+  <div class="card">
+    <div class="card-header docs-primary-header" style="padding:4px;padding-left:5px;color:white">
+      <div class="row">
+        <div class="col-sm-10">
+          <h1 *ngIf="!isEditing"> Add New Department</h1>
+          <h1 *ngIf="isEditing">Update Existing Department</h1>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card" style="border-radius:0px">
+        <div class="card-body" style="padding:4px">
+          <form [formGroup]="signUpForm" class="form">
+          <div class="row">
+            <div class="col-sm-6">
+                <mat-form-field  class="example-full-width">
+                 <mat-select [(ngModel)]="departmentModel.CompanyId" formControlName="CompanyId" required placeholder="Name of the Company">
+                <mat-option *ngFor="let i of ListCompany" [value]="i.CompanyId" >{{i.CompanyName}}                      
+                </mat-option>
+                 </mat-select>
+                 <!-- <input [(ngModel)]="departmentModel.CompanyId" formControlName="CompanyId" required matInput>{{ListCompany.CompanyName}} -->
+                 <!-- <mat-error> NameoftheCompany required</mat-error> -->
+               </mat-form-field>
+              </div>
+          <div class="col-sm-6">
+            <mat-form-field class="example-full-width">
+              <input [(ngModel)]="departmentModel.DepartmentName" formControlName="DepartmentName" required matInput placeholder="Name of the Department" >
+              <mat-error> NameoftheDepartment required</mat-error>
+            </mat-form-field>
+          </div>
+          </div>
+          <div class="row">
+         <div class="col-sm-6">
+              <mat-form-field class="example-full-width">
+                <input [(ngModel)]="departmentModel.DepartmentCode" formControlName="DepartmentCode" required matInput placeholder="Department Code">
+                <mat-error> Department Code required</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-sm-6">
+                <mat-form-field  class="example-full-width">
+                 <mat-select [(ngModel)]="departmentModel.ParentId" formControlName="ParentId" required placeholder="Parent Department">
+                <!-- <mat-option value="Zonal Officer" >Officer</mat-option>
+                <mat-option value="Head Officer" >Head Officer</mat-option> -->
+                <mat-option *ngFor="let i of ListDepartment" [value]="i.DepartmentId">{{i.DepartmentName}}</mat-option>
+                 </mat-select>
+                  <mat-error> Parent Department required</mat-error>
+               </mat-form-field>
+              </div>
+      </div> 
+</form>
+
+        </div>
+        <div class="row">
+          <div class="col-sm-12" style="text-align: right">
+            <div class="btn">
+              <button *ngIf="!isEditing" mat-raised-button color="primary" (click)="SaveDepartmentDetails()">Save</button>&nbsp;
+              <button *ngIf="isEditing" mat-raised-button color="primary" (click)="SaveDepartmentDetails()">Update</button>&nbsp;
+              <button (click)="backDepartmentListForm()" mat-raised-button color="warn">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

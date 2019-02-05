@@ -1,0 +1,121 @@
+<div class="docs-primary-header component-page-header">
+  <div class="container">
+    <h1>Administrator / Role Library / ROLE MENU PRIVILAGE</h1>
+  </div>
+</div>
+<div class="container-fluid" id="fixedpage" style="padding-left:25%;padding-right:25%">
+
+
+
+
+  <div class="card" style="margin-top:3%">
+    <div class="card-header docs-primary-header" style="padding:4px;padding-left:5px;color:white">
+      <div class="row">
+        <div class="col-sm-12">
+          ROLE MENU PRIVILAGE
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="card" style="border-radius:0px">
+        <div class="card-body" style="padding:3%">
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <mat-form-field class="example-full-width">
+                <mat-select placeholder="Select Role" [(ngModel)]="model.RoleId" name="RoleId">
+                  <mat-option *ngFor="let role of RoleName" [value]="role.RoleId">{{role.RoleName}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="matbutton">
+                <button mat-raised-button color="primary">Save</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <button mat-raised-button color="primary">Expand all</button>
+
+
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <button mat-raised-button color="primary">Collaspe all</button>
+            </div>
+
+
+          </div>
+          <br>
+          <br>
+          <mat-accordion  *ngFor="let item of navItems">
+            <mat-expansion-panel>
+              <mat-expansion-panel-header  hideToggle="">
+                <mat-panel-title  *ngIf="item.SubMenuItems && item.SubMenuItems.length > 0">
+                  <mat-checkbox></mat-checkbox>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.MenuName}}
+                </mat-panel-title>
+                <mat-panel-title *ngIf="!item.SubMenuItems || item.SubMenuItems.length === 0">
+                    <mat-checkbox></mat-checkbox>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.MenuName}}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+             
+              <app-role-menu-child #Rolemenu [items]="item.SubMenuItems"></app-role-menu-child>
+            </mat-expansion-panel>
+          
+          </mat-accordion>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- 
+<div class="container">
+
+    <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Personal data
+            </mat-panel-title>
+            <mat-panel-description>
+              Type your name and age
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+      
+          <mat-form-field>
+            <input matInput placeholder="First name">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Age">
+          </mat-form-field>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Self aware panel
+            </mat-panel-title>
+            <mat-panel-description>
+              Currently I am {{panelOpenState ? 'open' : 'closed'}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>I'm visible because I am open</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+</div> -->

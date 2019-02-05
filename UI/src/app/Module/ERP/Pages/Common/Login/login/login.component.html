@@ -1,0 +1,54 @@
+
+
+
+
+
+  <div class="container-fluid bg">
+      <div class="row">
+            <!-- <img src="/assets/img/logo.png" alt="IMG"> -->
+      
+    <div class="card" id="login">
+        <div class="card-body">
+            <div class="col-sm-12" >
+                <!-- style="text-align:center;" -->
+                <h5 style="font-size:18px;font-weight: 1000;color:#0097a7">LOGIN</h5>
+                <!-- <img src="/assets/img/logo.png" style="width:100%" alt="IMG"> -->
+            </div>
+            <!-- assets/img/logo.png -->
+            <hr>
+            <div class="row">
+              
+                <div class="col-sm-12">
+                    <div style="margin-top:8%">
+                        <div >
+                            <!-- <label style="font-size:12px;color:black;font-weight: 550;">
+                                User Name</label> -->
+                            <mat-form-field class="example-full-width">
+                                <input matInput [(ngModel)]="model.Username" name="Username" placeholder="Enter User Name">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div style="margin-top:10%">
+                        <div>
+                            <!-- <label style="font-size:12px;color:black;font-weight: 550;">
+                                Password</label> -->
+                            <mat-form-field class="example-full-width">
+                                <input type="password" matInput [(ngModel)]="model.Password" name="Password" placeholder="Enter Password" >
+                            </mat-form-field>
+                        </div>
+                    </div>                  
+                  
+                </div>
+            </div>
+            <br>           
+            <hr>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div style="width:100%;text-align:center">
+                        <button mat-raised-button (click)="login()" id="login1" style="border-radius:500px;background-color:#0097a7;border-color: #BABCBF;color: #FFFFFF;width: 70%;height: 40px;font-size:18px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

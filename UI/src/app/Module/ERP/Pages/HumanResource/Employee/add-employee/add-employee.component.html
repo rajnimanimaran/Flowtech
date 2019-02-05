@@ -1,0 +1,351 @@
+<div class="docs-primary-header component-page-header">
+    <div class="container">
+        <h1 *ngIf="!isEditing">Human Resource > Employee > Add New Employee</h1>
+        <h1 *ngIf="isEditing">Human Resource > Employee > Update Existing  Employee</h1>
+    </div>
+</div>
+<div class="container-fluid" id="fixedpage" style="padding-left:10%;padding-right:10%">
+    <div class="row"  style="margin-top:1%">
+        <div class="col-sm-10">
+             </div>
+        <div class="col-sm-2" style="text-align-last: right">
+            <div>
+                <button mat-raised-button (click)="backtoEmployeeListForm()"  color="warn">
+                    <mat-icon>list</mat-icon>View
+                </button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <mat-tab-group>
+    <div class="card">
+        <div class="card-header docs-primary-header" style="padding:4px;padding-left:5px;color:white">
+            <div class="row">
+                <div class="col-sm-10">
+                    <h1 *ngIf="!isEditing">Add New Employee</h1>
+                    <h1 *ngIf="isEditing">Update Existing  Employee</h1>
+                </div>
+
+            </div>
+
+        </div>
+       <mat-tab label="Personal Details" >
+        <div class="card-body">
+            <div class="card" style="border-radius:0px">
+                <div class="card-body" style="padding:3%">
+                    <!-- <form [formGroup]="signUpForm" class="form"> -->
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <mat-form-field class="example-full-width">
+                                    <input required matInput [(ngModel)]="model.FirstName" placeholder="FirstName">
+                                    <mat-error> FirstName required</mat-error>
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input required matInput [(ngModel)]="model.LastName" placeholder="LastName">
+                                    <mat-error> LastName required</mat-error>
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input required matInput placeholder="FatherName" [(ngModel)]="model.FatherName">
+                                    <mat-error> FatherName required</mat-error>
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width" >
+                                    <input required [(ngModel)]="model.DOB" (click)="picker.open()" matInput [matDatepicker]="picker" 
+                                        placeholder="DateOfBirth" min="1938-01-01" max="2000-01-01">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                    <mat-error> DateOfBirth required</mat-error>
+                                </mat-form-field>
+                                <div style="display: flex;flex-direction: row;margin-top:10px">
+                                    <label>Gender:</label>
+                                <mat-radio-group [(ngModel)]="model.Gender">
+                                    &nbsp;&nbsp;&nbsp;
+                                    <mat-radio-button value="M">Male</mat-radio-button>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <mat-radio-button value="F">Female</mat-radio-button>
+                                </mat-radio-group>
+                                </div>                           
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <!-- <mat-form-field class="example-full-width">
+                                    <mat-select [(ngModel)]="model.DepartmentId" required placeholder="Department">
+                                        <mat-option *ngFor="let i of DepartmentName" [value]="i.DepartmentId">{{i.DepartmentName}}
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-error> Department required</mat-error>
+                                </mat-form-field> -->
+                                <mat-form-field  class="example-full-width">
+                                    <mat-select [(ngModel)]="model.DepartmentId" (ngModelChange)="viewDesignationByDeptId(model.DepartmentId)" required placeholder=" Department Name">
+                                   <mat-option *ngFor="let i of ListDepartment" [value]="i.DepartmentId">{{i.DepartmentName}}</mat-option>
+                                    </mat-select>
+                                     <mat-error> Parent Department required</mat-error>
+                                  </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <mat-select [(ngModel)]="model.DesignationId"  required placeholder="Designation">
+                                        <mat-option *ngFor="let i of ListDesignation" [value]="i.DesignationId">{{i.DesignationName}}
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-error> Designation required</mat-error>
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width ">
+                                    <input [(ngModel)]="model.DOJ" (focus)="piker.open()" required matInput [matDatepicker]="piker"
+                                        placeholder="DateOfJoining" [max]="maxDate">
+                                    <mat-datepicker-toggle matSuffix [for]="piker"></mat-datepicker-toggle>
+                                    <mat-datepicker #piker></mat-datepicker>
+                                    <mat-error> DateOfJoining required</mat-error>
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="model.BloodGroup" required matInput placeholder="BloodGroup">
+                                    <mat-error> BloodGroup required</mat-error>
+                                </mat-form-field>
+                              
+                                <div style="display: flex;flex-direction: row;margin-top:10px">
+                                    <label>Maritial Status:</label>
+                                    <mat-radio-group [(ngModel)]="model.MaritalStatus">
+                                        <mat-radio-button value="M">Married</mat-radio-button>
+                                        <mat-radio-button value="U">Unmarried</mat-radio-button>
+                                    </mat-radio-group>
+                           
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <label class="example-margin">ImageUpload:</label>
+                                <br>
+                                <img [src]="API_URL + '/ProfilePictures/'+ this.model.ProfilePhoto" style="width: 150px;height: 150px;">
+                                <br /><br>
+                                <input type="file" [(ngModel)]="model.ProfilePhoto" value="" (change)="fileUpload($event)"
+                                    placeholder="ImageUpload"><br><br>
+                            </div>
+                        </div>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </div>
+    </mat-tab>
+    </div>
+
+    <mat-tab label="Address Details">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>
+                <label class="example-margin">Address Details:</label>
+            </mat-card-title>
+            <mat-card-subtitle>Permanenet Address</mat-card-subtitle>
+        </mat-card-header>
+        <!-- <div class="card-body">
+                    <div class="card" style="border-radius:0px"> -->
+        <div class="card-body">
+            <div class="card" style="border-radius:0px">
+                <div class="card-body" style="padding:3%">
+                    <!-- <form [formGroup]="signForm" class="form"> -->
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3">
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="address.PerAddress1" name="PerAddress1" required matInput placeholder="Address1">
+                                    <mat-error> Address1 required</mat-error>
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+    
+                                    <input matInput [(ngModel)]="address.PerCountry" name="PerCountry" required placeholder="Country">
+                                    <mat-error> Country required</mat-error>
+                                </mat-form-field>
+    
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="address.PerMobile" required name="PerMobile" OnlyNumber='true' matInput placeholder="Mobile No">
+                                    <mat-error> MobileNo required</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="address.PerAddress2" name="PerAddress2" required matInput placeholder="Address2">
+                                    <mat-error> Address2 required</mat-error>
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="address.PerState" name="PerState" required matInput placeholder="State">
+                                    <mat-error> State required</mat-error>
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="address.PerLandline" name="PerLandline" required matInput placeholder="Landline No">
+                                    <mat-error> Landline No required</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="address.PerPincode" name="PerPincode" required matInput placeholder="Pincode">
+                                    <mat-error> Pincode required</mat-error>
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="address.PerCity" name="PerCity" required matInput placeholder="City">
+                                    <mat-error> City required</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="address.PerEmailId" name="PerEmailId" required [formControl]="email" matInput placeholder="EmailId" email="true">
+                                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width">
+                                    <input [(ngModel)]="address.PerArea" name="PerArea" required matInput placeholder="Area">
+                                    <mat-error> Area required</mat-error>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </div>
+        <mat-divider style="margin-top:2%"></mat-divider>
+        <mat-checkbox [(ngModel)]="address.IsSameAddress" [value]="address.IsSameAddress" (ngModelChange)="isPerAddressSamaeAsCommAddress()"  name="IsSameAddress">Is Communication Address is same as Permanent Address click here</mat-checkbox>
+
+        <br>
+        <form *ngIf="address.IsSameAddress==true">
+        <mat-card class="example-card">
+            <mat-card-header>
+                <!-- <mat-card-title>
+                    <label class="example-margin">Address Details:</label>
+                </mat-card-title> -->
+                <mat-card-subtitle>Communication Address</mat-card-subtitle>
+            </mat-card-header>
+        
+        <!-- <mat-card-subtitle>Communication Address</mat-card-subtitle> -->
+        <div class="card-body">
+            <div class="card" style="border-radius:0px">
+                <div class="card-body" style="padding:3%">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommAddress1" name="CommAddress1" required matInput placeholder="Address1" readonly>
+                                <mat-error> Address1 required</mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+
+                                <input matInput [(ngModel)]="address.CommCountry" name="CommCountry" required placeholder="Country" readonly>
+                                <mat-error> Country required</mat-error>
+                            </mat-form-field>
+
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommMobile" name="CommMobile" required OnlyNumber='true' matInput placeholder="Mobile No" readonly>
+                                <mat-error> MobileNo required</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommAddress2" name="CommAddress2" required matInput placeholder="Address2" readonly>
+                                <mat-error> Address2 required</mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommState" name="CommState" required matInput placeholder="State" readonly>
+                                <mat-error> State required</mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommLandline" name="CommLandline" required matInput placeholder="Landline No" readonly>
+                                <mat-error> Landline No required</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommPincode" name="CommPincode" required matInput placeholder="Pincode" readonly>
+                                <mat-error> Pincode required</mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommCity" name="CommCity" required matInput placeholder="City" readonly>
+                                <mat-error> City required</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommEmailId" name="CommEmailId" required matInput placeholder="EmailId" readonly>
+                                <mat-error> EmailId required</mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommArea" name="CommArea" required matInput placeholder="Area" readonly>
+                                <mat-error> Area required</mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </mat-card>
+    </form>
+
+    <form *ngIf="address.IsSameAddress==false">
+        <mat-card class="example-card">
+            <mat-card-header>
+                <!-- <mat-card-title>
+                    <label class="example-margin">Address Details:</label>
+                </mat-card-title> -->
+                <mat-card-subtitle>Communication Address</mat-card-subtitle>
+            </mat-card-header>
+        
+        <!-- <mat-card-subtitle>Communication Address</mat-card-subtitle> -->
+        <div class="card-body">
+            <div class="card" style="border-radius:0px">
+                <div class="card-body" style="padding:3%">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommAddress1" name="CommAddress1" required matInput placeholder="Address1">
+                                <mat-error> Address1 required</mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+
+                                <input matInput [(ngModel)]="address.CommCountry" name="CommCountry" required placeholder="Country">
+                                <mat-error> Country required</mat-error>
+                            </mat-form-field>
+
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommMobile" name="CommMobile" required OnlyNumber='true' matInput placeholder="Mobile No">
+                                <mat-error> MobileNo required</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommAddress2" name="CommAddress2" required matInput placeholder="Address2">
+                                <mat-error> Address2 required</mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommState" name="CommState" required matInput placeholder="State">
+                                <mat-error> State required</mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommLandline" name="CommLandline" required matInput placeholder="Landline No">
+                                <mat-error> Landline No required</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommPincode" name="CommPincode" required matInput placeholder="Pincode">
+                                <mat-error> Pincode required</mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommCity" name="CommCity" required matInput placeholder="City">
+                                <mat-error> City required</mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommEmailId" name="CommEmailId" required matInput placeholder="EmailId">
+                                <mat-error> EmailId required</mat-error>
+                            </mat-form-field>
+                            <mat-form-field class="example-full-width">
+                                <input [(ngModel)]="address.CommArea" name="CommArea" required matInput placeholder="Area">
+                                <mat-error> Area required</mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </mat-card>
+    </form>
+        <div class="matbutton">
+      
+            <button *ngIf="!isEditing" mat-raised-button color="primary" (click)="savedEmployeeDetails()">Save</button>&nbsp;
+            <button *ngIf="isEditing" mat-raised-button color="primary" (click)="savedEmployeeDetails()">Update</button>&nbsp;
+            <button (click)="backtoEmployeeListForm()" mat-raised-button color="warn">Cancel</button>
+        </div>
+
+    </mat-card>
+</mat-tab>
+</mat-tab-group>
+</div>

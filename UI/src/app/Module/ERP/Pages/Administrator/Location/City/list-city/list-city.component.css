@@ -1,0 +1,9 @@
+mat-cell:nth-child(5),
+mat-header-cell:nth-child(5) {
+  
+    flex: 0 0 100px;
+}
+
+.inFilter  {
+    font-weight:1000
+  }

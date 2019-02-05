@@ -1,0 +1,31 @@
+button.mat-flat-button {
+    line-height: 35px;
+}
+
+
+
+.dropdown-item {
+    display: block;
+    font-family: Roboto !important;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.material-icons {
+    line-height: 1.5;
+}
+
+.theme-pulse.noti-pulse {
+    position: absolute;
+    top: 5px;
+    margin-left: 2px;
+}
+
+

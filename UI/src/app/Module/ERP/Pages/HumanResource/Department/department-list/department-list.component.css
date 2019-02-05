@@ -1,0 +1,29 @@
+/* .mat-header-row .ng-star-inserted{
+    background-color: #4596e7;
+}
+
+.box-body{
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: .25rem;
+    margin: 5px 0px;
+} */
+
+mat-cell:nth-child(3),
+mat-header-cell:nth-child(3) {
+  
+    flex: 0 0 20%;
+}
+
+mat-cell:nth-child(6),
+mat-header-cell:nth-child(6) {
+  
+    flex: 0 0 100px;
+}
+
+
+.inFilter  {
+    font-weight:1000
+}
+

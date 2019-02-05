@@ -1,0 +1,350 @@
+
+<!--/ View table page -->
+<div class="docs-primary-header component-page-header">
+  <div class="container">
+    <h1>Purchase Order List (View Table)</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="col-lg-12 col-md-12">
+    <div class="row my-2 d-flex justify-content-center">
+      <div class="col-lg-3 col-md-3">
+        <mat-form-field class="width-full input-label">
+          <mat-select placeholder="Working Location" class="f-14">
+          <mat-option>--Select--</mat-option>
+          <mat-option value="option1">Chennai</mat-option>
+          <mat-option value="option2">Delhi</mat-option>
+          <mat-option value="option3">Location 3</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <mat-form-field class="width-full input-label">
+          <input matInput [matDatepicker]="JDFrom" class="f-14" placeholder="Joining Date From">
+          <mat-datepicker-toggle matSuffix [for]="JDFrom"></mat-datepicker-toggle>
+          <mat-datepicker #JDFrom></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <mat-form-field class="width-full input-label">
+          <input matInput [matDatepicker]="JDTo" class="f-14" placeholder="Joining Date To">
+          <mat-datepicker-toggle matSuffix [for]="JDTo"></mat-datepicker-toggle>
+          <mat-datepicker #JDTo></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <mat-form-field class="width-full input-label">
+          <input matInput placeholder="Employee Code" class="f-14" type="number">
+        </mat-form-field>
+      </div>
+      <div class="col-lg-1 col-md-1">
+        <button mat-icon-button color="warn" class="mt-2">
+          <mat-icon aria-label="Search Now">search</mat-icon>
+        </button>
+      </div>
+    </div> 
+  </div><!--/col-lg-12 col-md-12-->
+  
+  <div class="panel">
+    <div class="col-lg-12 col-md-12">
+      <div class="box-body">
+        <div class="row">
+          <div class="col-lg-4 col-xl-6"> 
+            <div class="input-group ht-41">
+              <div class="input-group-prepend">
+                <span class="input-group-text input-group-empty">
+                  <i class="fa fa-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control text-box-empty" 
+                placeholder="Global Filter (Type Employee Name, Id, Department..)"
+                (keyup)="applyFilter($event.target.value)">
+            </div> 
+          </div>
+          <div class="col-lg-8 col-xl-6 d-flex align-items-center justify-content-end"> 
+            <div class="">
+              <!-- <a class="dropdown-toggle empty-btn" href="#" id="ExportData" data-toggle="dropdown">
+                <i class="fa fa-download"></i> Export Data
+              </a>
+              <div class="dropdown-menu" aria-labelledby="ExportData">
+                <a class="dropdown-item" href="#"><i class="far fa-file-pdf"></i> Export as PDF</a>
+                <a class="dropdown-item" href="#"><i class="far fa-file-excel"></i> Export as Excel</a>
+                <a class="dropdown-item" href="#"><i class="far fa-file-word"></i> Export as Word</a>
+              </div> -->              
+              <button mat-icon-button color="warn" matTooltip="Add New Row" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                <i class="fas fa-plus"></i>
+              </button>
+              <button mat-icon-button color="warn" matTooltip="Document" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                <i class="far fa-file-alt"></i>
+              </button>                            
+              <button mat-icon-button color="warn" matTooltip="Delete" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                <i class="material-icons font20">delete</i>
+              </button>
+              <button mat-icon-button color="warn" matTooltip="Print Here" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                <i class="fas fa-print"></i>
+              </button>
+              <button mat-icon-button color="warn" matTooltip="Download Here" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                <i class="fas fa-download"></i>
+              </button>
+              <div class="btn-group">
+                <a mat-mini-fab color="warn" [routerLink]="['/ViewTable']" matTooltip="Table View Selected" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                  <i class="fa fa-table"></i>
+                </a>
+                <a mat-icon-button color="warn" [routerLink]="['/UngridList']" matTooltip="List View" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                  <i class="fa fa-th-large"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <!--/ table start-->
+    <div class="col-lg-12 col-md-12" [class.fullScreen]="screenfullClicked">
+      <div class="table-container mat-elevation-z2 mb-5"> 
+        <mat-table #table [dataSource]="dataSource" matSort class="mat-table-fixed table-child">
+          
+          <!-- Checkbox Column -->
+          <ng-container matColumnDef="select">
+            <mat-header-cell *matHeaderCellDef class="row-select row-checkbox">
+              <mat-checkbox (change)="$event ? masterToggle() : null"
+                  [checked]="selection.hasValue() && isAllSelected()"
+                  [indeterminate]="selection.hasValue() && !isAllSelected()">
+              </mat-checkbox>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row" class="row-select row-checkbox">
+              <mat-checkbox (click)="$event.stopPropagation()"
+                  (change)="$event ? selection.toggle(row) : null"
+                  [checked]="selection.isSelected(row)">
+              </mat-checkbox>
+            </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="position">
+            <mat-header-cell *matHeaderCellDef class="inFilter" mat-sort-header>
+              No
+              <button mat-icon-button [satPopoverAnchorFor]="NoFilter" (click)="NoFilter.toggle()" color="primary" class="Filter-icon">
+                <mat-icon aria-label="Filter">keyboard_arrow_down</mat-icon>
+              </button>
+              <sat-popover #NoFilter horizontalAlign="center" 
+                    verticalAlign="below"
+                    closeTransition="500ms ease-out">
+                <div class="info-wrapper satPop">
+                  <mat-form-field class="w-100">
+                    <input matInput placeholder="Id Search" type="number" 
+                      (keyup)="applyFilter($event.target.value)">  
+                  </mat-form-field>
+                  <div class="ta-w">
+                    <button mat-mini-fab color="primary" class="satPop-ok" (click)="NoFilter.toggle()">
+                      <mat-icon aria-label="Search">search</mat-icon>
+                    </button>
+                    <button mat-mini-fab color="warn" (click)="NoFilter.toggle()" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </sat-popover>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="row-NO"> {{element.position}} </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="empname">
+            <mat-header-cell *matHeaderCellDef class="inFilter" mat-sort-header> 
+              Employee Name 
+              <button mat-icon-button [satPopoverAnchorFor]="empFilter" (click)="empFilter.toggle()" color="primary" class="Filter-icon">
+                <mat-icon aria-label="empFilter">keyboard_arrow_down</mat-icon>
+              </button>
+              <sat-popover #empFilter horizontalAlign="center" 
+                    verticalAlign="below" 
+                    closeTransition="500ms ease-out">
+                <div class="info-wrapper satPop">
+                  <mat-form-field class="w-100">
+                    <input matInput placeholder="Type Employee Name" type="text"
+                      (keyup)="applyFilter($event.target.value)">
+                  </mat-form-field>
+                  <div class="ta-w">
+                    <button mat-mini-fab color="primary" class="satPop-ok" (click)="empFilter.toggle()">
+                      <mat-icon aria-label="Search">search</mat-icon>
+                    </button>
+                    <button mat-mini-fab color="warn" (click)="empFilter.toggle()" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </sat-popover>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="row-empname"> {{element.empname}} </mat-cell>
+          </ng-container>
+  
+          <ng-container matColumnDef="department">
+            <mat-header-cell *matHeaderCellDef class="inFilter" mat-sort-header> 
+              Department
+              <button mat-icon-button [satPopoverAnchorFor]="deptFilter" (click)="deptFilter.toggle()" color="primary" class="Filter-icon">
+                <mat-icon aria-label="deptFilter">keyboard_arrow_down</mat-icon>
+              </button>
+              <sat-popover #deptFilter horizontalAlign="center" 
+                    verticalAlign="below" 
+                    closeTransition="500ms ease-out">
+                <div class="info-wrapper satPop">
+                  <mat-form-field class="w-100">
+                    <input matInput placeholder="Type Department" type="text"
+                      (keyup)="applyFilter($event.target.value)">
+                  </mat-form-field>
+                  <div class="ta-w">
+                    <button mat-mini-fab color="primary" class="satPop-ok" (click)="deptFilter.toggle()">
+                      <mat-icon aria-label="Search">search</mat-icon>
+                    </button>
+                    <button mat-mini-fab color="warn" (click)="deptFilter.toggle()" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </sat-popover>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="row-dept"> {{element.department}} </mat-cell>
+          </ng-container> 
+          
+          <ng-container matColumnDef="designation">
+            <mat-header-cell *matHeaderCellDef class="inFilter" mat-sort-header> 
+              Designation
+              <button mat-icon-button [satPopoverAnchorFor]="desigFilter" (click)="desigFilter.toggle()" color="primary" class="Filter-icon">
+                <mat-icon aria-label="desigFilter">keyboard_arrow_down</mat-icon>
+              </button>
+              <sat-popover #desigFilter horizontalAlign="center" 
+                    verticalAlign="below" 
+                    closeTransition="500ms ease-out">
+                <div class="info-wrapper satPop">
+                  <mat-form-field class="w-100">
+                    <input matInput placeholder="Type Designation" type="text"
+                      (keyup)="applyFilter($event.target.value)">
+                  </mat-form-field>
+                  <div class="ta-w">
+                    <button mat-mini-fab color="primary" class="satPop-ok" (click)="desigFilter.toggle()">
+                      <mat-icon aria-label="Search">search</mat-icon>
+                    </button>
+                    <button mat-mini-fab color="warn" (click)="desigFilter.toggle()" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </sat-popover>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="row-desig"> {{element.designation}} </mat-cell>
+          </ng-container>
+  
+          <ng-container matColumnDef="manager">
+            <mat-header-cell *matHeaderCellDef class="inFilter" mat-sort-header> 
+              Manager
+              <button mat-icon-button [satPopoverAnchorFor]="mgrFilter" (click)="mgrFilter.toggle()" color="primary" class="Filter-icon">
+                <mat-icon aria-label="mgrFilter">keyboard_arrow_down</mat-icon>
+              </button>
+              <sat-popover #mgrFilter horizontalAlign="center" 
+                    verticalAlign="below" 
+                    closeTransition="500ms ease-out">
+                <div class="info-wrapper satPop">
+                  <mat-form-field class="w-100">
+                    <input matInput placeholder="Type Manager" type="text"
+                      (keyup)="applyFilter($event.target.value)">
+                  </mat-form-field>
+                  <div class="ta-w">
+                    <button mat-mini-fab color="primary" class="satPop-ok" (click)="mgrFilter.toggle()">
+                      <mat-icon aria-label="Search">search</mat-icon>
+                    </button>
+                    <button mat-mini-fab color="warn" (click)="mgrFilter.toggle()" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </sat-popover>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="row-manager"> {{element.manager}} </mat-cell>
+          </ng-container>
+          
+          <ng-container matColumnDef="email">
+            <mat-header-cell *matHeaderCellDef class="inFilter" mat-sort-header>
+              Email
+              <button mat-icon-button [satPopoverAnchorFor]="emailFilter" (click)="emailFilter.toggle()" color="primary" class="Filter-icon">
+                <mat-icon aria-label="emailFilter">keyboard_arrow_down</mat-icon>
+              </button>
+              <sat-popover #emailFilter horizontalAlign="center" 
+                    verticalAlign="below" 
+                    closeTransition="500ms ease-out">
+                <div class="info-wrapper satPop">
+                  <mat-form-field class="w-100">
+                    <input matInput placeholder="Type Email" type="email"
+                      (keyup)="applyFilter($event.target.value)">
+                  </mat-form-field>
+                  <div class="ta-w">
+                    <button mat-mini-fab color="primary" class="satPop-ok" (click)="emailFilter.toggle()">
+                      <mat-icon aria-label="Search">search</mat-icon>
+                    </button>
+                    <button mat-mini-fab color="warn" (click)="emailFilter.toggle()" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </sat-popover>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="row-email"> {{element.email}} </mat-cell>
+          </ng-container>
+          
+          <ng-container matColumnDef="phoneno">
+            <mat-header-cell *matHeaderCellDef class="inFilter" mat-sort-header>
+              Phone No.            
+              <button mat-icon-button [satPopoverAnchorFor]="pnoFilter" (click)="pnoFilter.toggle()" color="primary" class="Filter-icon">
+                <mat-icon aria-label="pnoFilter">keyboard_arrow_down</mat-icon>
+              </button>
+              <sat-popover #pnoFilter horizontalAlign="center" 
+                    verticalAlign="below" 
+                    closeTransition="500ms ease-out">
+                <div class="info-wrapper satPop">
+                  <mat-form-field class="w-100">
+                    <input matInput placeholder="Type Phone No" type="number"
+                      (keyup)="applyFilter($event.target.value)">
+                  </mat-form-field>
+                  <div class="ta-w">
+                    <button mat-mini-fab color="primary" class="satPop-ok" (click)="pnoFilter.toggle()">
+                      <mat-icon aria-label="Search">search</mat-icon>
+                    </button>
+                    <button mat-mini-fab color="warn" (click)="pnoFilter.toggle()" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </sat-popover>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="row-phno"> {{element.phoneno}} </mat-cell>
+          </ng-container>
+          
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;" 
+              (click)="selection.toggle()">
+          </mat-row>
+        </mat-table>   
+        <mat-paginator #paginator
+            [pageSize]="5"
+            [pageSizeOptions]="[5, 10, 20]"
+            [showFirstLastButtons]="true">
+        </mat-paginator>
+      </div>
+    </div>
+    <!--/ table end-->
+  </div> <!--/panel-->
+
+  <div class="fixedIconBottom">
+    <button mat-mini-fab class="default-btn" color="warn" (click)="onClick()" id="fixedBotButton">
+      <span class="fullscreen-icon">
+        <i class="fa"></i>
+      </span>
+    </button>
+  </div> <!--/full screen button end-->
+</div>

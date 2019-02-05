@@ -1,0 +1,288 @@
+
+<div class="docs-primary-header component-page-header">
+  <div class="container">
+    <h1>WorkOrderMaster
+    </h1>
+  </div>
+</div>
+<br>
+<br>
+<div class="container" style="padding-left: 15%;padding-right: 5%" *ngIf="show">
+  <form class="form">
+    <div class="row">
+      <div class="col-sm-4">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="WorkOrderNumber" [(ngModel)]="model.WONumber" name="WONumber" required>
+          <mat-error> WorkOrderNumber required</mat-error>
+        </mat-form-field>
+       
+      </div>
+      <div class="col-sm-4">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Order" [(ngModel)]="model.OrderID" name="OrderID "  required>
+          <mat-error> Order required</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-4">
+        <mat-form-field class="example-full-width" >
+          <mat-select placeholder="SubContract"  required  [(ngModel)]="model.SubContID" name="subContID">
+            <mat-option *ngFor="let uom of SubcontractData" [value]="uom.subContID">{{uom.Name}}</mat-option>
+          </mat-select>
+          <mat-error> SubContract required</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker1" placeholder="AssignedDate" [(ngModel)]="model.AssignedDate" name="AssignedDate">
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-4" style="margin-top: 19px;">
+        <mat-checkbox [(ngModel)]="model.Status" name="Status"></mat-checkbox>&nbsp;&nbsp;
+        <mat-label>Status</mat-label>
+      </div>
+    
+      <div class="col-sm-4">
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="ExpectedCompleteDate" [(ngModel)]="model.ExpectedCompleteDate" name="ExpectedCompleteDate">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+
+  <div class="btn">
+    <button (click)="saveWorkOrder()" mat-raised-button color="primary">Save</button>&nbsp;
+    <button (click)="Cancel()" mat-raised-button color="warn">Cancel</button>
+  </div>
+</div>
+
+<br>
+<br>
+<div *ngIf=!show>
+  <div class="docs-primary-header component-page-header">
+
+  </div>
+
+
+  <div class="container-fluid" id="fixedpage" style="padding-left:5%;padding-right:5%">
+
+    <div class="row" style="margin-top:3%">
+      <div class="col-sm-8" style="padding-left:30px">
+        <div class="input-group ht-41">
+          <div class="input-group-prepend">
+            <span class="input-group-text input-group-empty">
+              <i class="fa fa-search"></i>
+            </span>
+          </div>
+          <input type="text" class="form-control text-box-empty" placeholder="Global Filter (Type Code, Name of the Company..)" (keyup)="applyFilter($event.target.value)">
+        </div>
+      </div>
+      <div class="col-sm-4" style="text-align:right;padding-right:30px" [routerLink]="['/product']">
+        <div>
+          <button mat-raised-button (click)="addArea()" color="warn">
+            <mat-icon>add</mat-icon>New
+          </button>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="table-container mat-elevation-z2">
+      <mat-table class="color-table" #table [dataSource]="dataSource" matSort>
+
+        <ng-container matColumnDef="SNo">
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white">
+            SNo
+            <button mat-icon-button [matMenuTriggerFor]="SNoFilter" class="Filter-icon-WT">
+              <mat-icon aria-label="SNo Filter">keyboard_arrow_down</mat-icon>
+            </button>
+            <mat-menu #SNoFilter="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before">
+              <div class="info-wrapper menuPop">
+                <mat-form-field class="w-100 input-label">
+                  <input matInput placeholder="Search SNo" (click)="handleClick($event)" (keyup)="applyFilter($event.target.value)" autofocus>
+                </mat-form-field>
+                <div class="ta-w">
+                  <button mat-mini-fab color="warn" class="satPop-ok">
+                    <mat-icon aria-label="Close">close</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </mat-menu>
+          </mat-header-cell>
+          <mat-cell *matCellDef="let data;let i= index"> {{i+1}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="WorkOrderNumber">
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white">
+            WorkOrderNumber
+            <button mat-icon-button [matMenuTriggerFor]="WorkOrderNumberFilter" class="Filter-icon-WT">
+              <mat-icon aria-label="Area Filter">keyboard_arrow_down</mat-icon>
+            </button>
+            <mat-menu #WorkOrderNumberFilter="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before">
+              <div class="info-wrapper menuPop">
+                <mat-form-field class="w-100 input-label">
+                  <input matInput placeholder="Search WorkOrderNumber." (click)="handleClick($event)" (keyup)="applyFilter($event.target.value)"
+                    autofocus>
+                </mat-form-field>
+                <div class="ta-w">
+                  <button mat-mini-fab color="warn" class="satPop-ok">
+                    <mat-icon aria-label="Close">close</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </mat-menu>
+          </mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.WONumber}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="Order">
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white">
+            Order
+            <button mat-icon-button [matMenuTriggerFor]="OrderFilter" class="Filter-icon-WT">
+              <mat-icon aria-label="Area Filter">keyboard_arrow_down</mat-icon>
+            </button>
+            <mat-menu #OrderFilter="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before">
+              <div class="info-wrapper menuPop">
+                <mat-form-field class="w-100 input-label">
+                  <input matInput placeholder="Search Order." (click)="handleClick($event)" (keyup)="applyFilter($event.target.value)" autofocus>
+                </mat-form-field>
+                <div class="ta-w">
+                  <button mat-mini-fab color="warn" class="satPop-ok">
+                    <mat-icon aria-label="Close">close</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </mat-menu>
+          </mat-header-cell>
+          <mat-cell *matCellDef="let data"> {{data.OrderID}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="SubContract">
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white">
+            SubContract
+            <button mat-icon-button [matMenuTriggerFor]="SubContractFilter" class="Filter-icon-WT">
+              <mat-icon aria-label="Area Filter">keyboard_arrow_down</mat-icon>
+            </button>
+            <mat-menu #SubContractFilter="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before">
+              <div class="info-wrapper menuPop">
+                <mat-form-field class="w-100 input-label">
+                  <input matInput placeholder="Search SubContract." (click)="handleClick($event)" (keyup)="applyFilter($event.target.value)" autofocus>
+                </mat-form-field>
+                <div class="ta-w">
+                  <button mat-mini-fab color="warn" class="satPop-ok">
+                    <mat-icon aria-label="Close">close</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </mat-menu>
+          </mat-header-cell>
+          <mat-cell *matCellDef="let data"> {{data.Name}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="AssignedDate">
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white">
+            AssignedDate 
+            <button mat-icon-button [matMenuTriggerFor]="AssignedDateFilter" class="Filter-icon-WT">
+              <mat-icon aria-label="Area Filter">keyboard_arrow_down</mat-icon>
+            </button>
+            <mat-menu #AssignedDate Filter="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before">
+              <div class="info-wrapper menuPop">
+                <mat-form-field class="w-100 input-label">
+                  <input matInput placeholder="Search AssignedDate." (click)="handleClick($event)" (keyup)="applyFilter($event.target.value)"
+                    autofocus>
+                </mat-form-field>
+                <div class="ta-w">
+                  <button mat-mini-fab color="warn" class="satPop-ok">
+                    <mat-icon aria-label="Close">close</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </mat-menu>
+          </mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.AssignedDate}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="Status">
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white">
+            Status 
+            <button mat-icon-button [matMenuTriggerFor]="StatusFilter" class="Filter-icon-WT">
+              <mat-icon aria-label="Area Filter">keyboard_arrow_down</mat-icon>
+            </button>
+            <mat-menu #Status Filter="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before">
+              <div class="info-wrapper menuPop">
+                <mat-form-field class="w-100 input-label">
+                  <input matInput placeholder="Search Status." (click)="handleClick($event)" (keyup)="applyFilter($event.target.value)" autofocus>
+                </mat-form-field>
+                <div class="ta-w">
+                  <button mat-mini-fab color="warn" class="satPop-ok">
+                    <mat-icon aria-label="Close">close</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </mat-menu>
+          </mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.Status}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="ExpectedCompleteDate">
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white">
+            ExpectedCompleteDate 
+            <button mat-icon-button [matMenuTriggerFor]="ExpectedCompleteDateFilter" class="Filter-icon-WT">
+              <mat-icon aria-label="Area Filter">keyboard_arrow_down</mat-icon>
+            </button>
+            <mat-menu #ExpectedCompleteDate Filter="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before">
+              <div class="info-wrapper menuPop">
+                <mat-form-field class="w-100 input-label">
+                  <input matInput placeholder="Search ExpectedCompleteDate." (click)="handleClick($event)" (keyup)="applyFilter($event.target.value)"
+                    autofocus>
+                </mat-form-field>
+                <div class="ta-w">
+                  <button mat-mini-fab color="warn" class="satPop-ok">
+                    <mat-icon aria-label="Close">close</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </mat-menu>
+          </mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.ExpectedCompleteDate}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+          <mat-header-cell *matHeaderCellDef class="color-white">Action</mat-header-cell>
+          <mat-cell *matCellDef="let data">{{data.action}}
+            <button mat-icon-button color="primary" matTooltip="Edit This Row" [matTooltipClass]="'custom-tip'">
+              <mat-icon aria-label="Edit Row" (click)="updateWorkOrders(data,true)" class="f-18">
+                edit
+              </mat-icon>
+            </button>
+            <button mat-icon-button color="warn" matTooltip="Delete This Row" [matTooltipClass]="'custom-tip'">
+              <mat-icon aria-label="Add" class="f-18" (click)="deleteWorkOrders(data)">delete</mat-icon>
+            </button>
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;let i=index" (click)="selection.toggle(row)">
+        </mat-row>
+      </mat-table>
+
+      <mat-paginator #paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
+      </mat-paginator>
+    </div>
+
+  </div>
+
+
+  <div class="fixedIconBottom">
+    <button mat-mini-fab class="default-btn" color="warn" (click)="onClick()" id="fixedBotButton">
+      <span class="fullscreen-icon" (click)="FScreenIcon = !FScreenIcon">
+        <i class="fa" [ngClass]="!FScreenIcon?'fa-arrows-alt':'fa-compress'"></i>
+      </span>
+    </button>
+  </div>
+</div>
+
+
+

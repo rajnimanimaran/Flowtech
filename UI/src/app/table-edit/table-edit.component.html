@@ -1,0 +1,212 @@
+
+
+<div class="docs-primary-header component-page-header">
+  <div class="container">
+    <h1>Edit Table List (Edit Row)</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="panel my-4">
+    <div class="col-lg-12 col-md-12">
+      <div class="box-body">
+        <div class="row">
+          <div class="col-lg-4 col-xl-6"> 
+            <div class="input-group ht-41">
+              <div class="input-group-prepend">
+                <span class="input-group-text input-group-empty">
+                  <i class="fa fa-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control text-box-empty" 
+                placeholder="Global Filter (Type Employee Name, Id, Department..)"
+                (keyup)="applyFilter($event.target.value)">
+            </div> 
+          </div>
+          <div class="col-lg-8 col-xl-6 d-flex align-items-center justify-content-end"> 
+            <div class="">
+              <!-- <a class="dropdown-toggle empty-btn" href="#" id="ExportData" data-toggle="dropdown">
+                <i class="fa fa-download"></i> Export Data
+              </a>
+              <div class="dropdown-menu" aria-labelledby="ExportData">
+                <a class="dropdown-item" href="#"><i class="far fa-file-pdf"></i> Export as PDF</a>
+                <a class="dropdown-item" href="#"><i class="far fa-file-excel"></i> Export as Excel</a>
+                <a class="dropdown-item" href="#"><i class="far fa-file-word"></i> Export as Word</a>
+              </div> -->
+              <button mat-icon-button color="warn" matTooltip="Document" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                <i class="far fa-file-alt"></i>
+              </button>                            
+              <button mat-icon-button color="warn" matTooltip="Print Here" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                <i class="fas fa-print"></i>
+              </button>
+              <button mat-icon-button color="warn" matTooltip="Download Here" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                <i class="fas fa-download"></i>
+              </button>
+              <button mat-icon-button color="warn" matTooltip="Delete" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                <i class="material-icons font20">delete</i>
+              </button>
+              <button mat-icon-button color="warn" matTooltip="Add New Row" 
+                      [matTooltipClass]="'custom-tip'" tooltip-position="above">
+                <i class="fas fa-plus"></i>
+              </button> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
+    
+    <div class="col-lg-12 col-md-12">
+      <!--/ table start-->
+      <div class="table-container mat-elevation-z2"> 
+        <mat-table class="color-table" #table [dataSource]="dataSource" matSort>
+          
+          <ng-container matColumnDef="position">
+            <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white">
+              No 
+              <button mat-icon-button [matMenuTriggerFor]="NoFilter" class="Filter-icon-WT">
+                <mat-icon aria-label="No Filter">keyboard_arrow_down</mat-icon>
+              </button>
+              <mat-menu #NoFilter="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before"> 
+                <div class="info-wrapper menuPop">
+                  <mat-form-field class="w-100 input-label">
+                    <input matInput placeholder="Search No." (click)="handleClick($event)"
+                      (keyup)="applyFilter($event.target.value)" autofocus> 
+                  </mat-form-field> 
+                  <div class="ta-w">
+                    <button mat-mini-fab color="warn" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </mat-menu>  
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+          </ng-container>
+          
+          <ng-container matColumnDef="empname">
+            <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white"> 
+              Employee Name 
+              <button mat-icon-button [matMenuTriggerFor]="EmpFilter" class="Filter-icon-WT">
+                <mat-icon aria-label="Employee Filter">keyboard_arrow_down</mat-icon>
+              </button>
+              <mat-menu #EmpFilter="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before">  
+                <div class="info-wrapper menuPop">
+                  <mat-form-field class="w-100 input-label">
+                    <input matInput placeholder="Search Employee Name." (click)="handleClick($event)"
+                      (keyup)="applyFilter($event.target.value)" autofocus> 
+                  </mat-form-field>
+                  <div class="ta-w">
+                    <button mat-mini-fab color="warn" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </mat-menu>  
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.empname}} </mat-cell>
+          </ng-container> 
+
+          <ng-container matColumnDef="manager">
+            <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white"> 
+              Manager 
+              <button mat-icon-button [matMenuTriggerFor]="ManagerFilter" class="Filter-icon-WT">
+                <mat-icon aria-label="Phone Filter">keyboard_arrow_down</mat-icon>
+              </button>
+              <mat-menu #ManagerFilter="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before">  
+                <div class="info-wrapper menuPop">
+                  <mat-form-field class="w-100 input-label">
+                    <input matInput placeholder="Search Manager." (click)="handleClick($event)"
+                      (keyup)="applyFilter($event.target.value)" autofocus> 
+                  </mat-form-field> 
+                  <div class="ta-w">
+                    <button mat-mini-fab color="warn" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </mat-menu> 
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.manager}} </mat-cell>
+          </ng-container>
+          
+          <ng-container matColumnDef="email">
+            <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white">
+              Email 
+              <button mat-icon-button [matMenuTriggerFor]="emailFilter" class="Filter-icon-WT">
+                <mat-icon aria-label="Phone Filter">keyboard_arrow_down</mat-icon>
+              </button>
+              <mat-menu #emailFilter="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before">  
+                <div class="info-wrapper menuPop">
+                  <mat-form-field class="w-100 input-label">
+                    <input matInput placeholder="Search Email." (click)="handleClick($event)"
+                      (keyup)="applyFilter($event.target.value)" autofocus> 
+                  </mat-form-field> 
+                  <div class="ta-w">
+                    <button mat-mini-fab color="warn" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </mat-menu> 
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+          </ng-container>
+          
+          <ng-container matColumnDef="phoneno">
+            <mat-header-cell *matHeaderCellDef mat-sort-header class="inFilter color-white">
+              Phone No.
+              <button mat-icon-button [matMenuTriggerFor]="pnoMenu" class="Filter-icon-WT">
+                <mat-icon aria-label="Phone Filter">keyboard_arrow_down</mat-icon>
+              </button>
+              <mat-menu #pnoMenu="matMenu" yPosition="below" [overlapTrigger]="false" xPosition="before">  
+                <div class="info-wrapper menuPop">
+                  <mat-form-field class="w-100 input-label">
+                    <input matInput placeholder="Search Phone No." (click)="handleClick($event)"
+                      (keyup)="applyFilter($event.target.value)" autofocus>
+                  </mat-form-field> 
+                  <div class="ta-w">
+                    <button mat-mini-fab color="warn" class="satPop-ok">
+                      <mat-icon aria-label="Close">close</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </mat-menu> 
+            </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.phoneno}} </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="action">
+            <mat-header-cell *matHeaderCellDef class="color-white">Action</mat-header-cell>
+            <mat-cell *matCellDef="let element">
+              <button mat-icon-button color="primary" [routerLink]="['/EditRow']" matTooltip="Edit This Row" [matTooltipClass]="'custom-tip'">
+                <mat-icon aria-label="Edit Row" class="f-18">
+                  edit
+                </mat-icon>
+              </button>
+              <button mat-icon-button color="warn" (click)="deleteRow(element.position)" matTooltip="Delete This Row" [matTooltipClass]="'custom-tip'">
+                <mat-icon aria-label="Add" class="f-18">delete</mat-icon>
+              </button>
+            </mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;" 
+              (click)="selection.toggle(row)">
+          </mat-row>
+        </mat-table>
+
+        <mat-paginator #paginator
+            [pageSize]="5"
+            [pageSizeOptions]="[5, 10, 20]"
+            [showFirstLastButtons]="true">
+        </mat-paginator>
+      </div> 
+      <!--/ table start-->
+    </div>     
+
+  </div> <!--/panel--> 
+</div>
